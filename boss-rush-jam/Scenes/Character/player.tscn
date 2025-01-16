@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bth28roxk88l7"]
+
+[ext_resource type="Script" path="res://Scripts/Character/player.gd" id="1_03swv"]
+[ext_resource type="PackedScene" uid="uid://cdmufqf1eppuy" path="res://Assets/Maharlika/Maharlikav1.aseprite" id="1_byis6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhsg7"]
+size = Vector2(8, 19)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_03swv")
+
+[node name="Maharlikav1" parent="." instance=ExtResource("1_byis6")]
+autoplay = "default"
+frame_progress = 0.533356
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_xhsg7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
