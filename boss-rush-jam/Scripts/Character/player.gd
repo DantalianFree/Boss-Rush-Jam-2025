@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const SPEED = 250
 
 func _process(delta):
