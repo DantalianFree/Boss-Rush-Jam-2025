@@ -1,7 +1,7 @@
 extends CharacterBody2D
 @onready var animated_sprite = $Maharlikav1
 
-const SPEED = 250
+const SPEED = 300
 
 func _process(delta):
 	var direction = Vector2.ZERO
@@ -17,11 +17,15 @@ func _process(delta):
 	
 	if direction != Vector2.ZERO:
 		animated_sprite.play()
-		if direction.x > 0:
-			animated_sprite.animation = "walk_right"
-		elif direction.x < 0:
-			animated_sprite.animation = "walk_left"
+		if direction.y > 0:
+			animated_sprite.animation = "front_run"
+		elif direction.y < 0:
+			animated_sprite.animation = "back_run"
+		elif direction.x > 0:
+			animated_sprite.animation = "right_run"
+		elif direction.x <0:
+			animated_sprite.animation = "left_run"
 	else:
-		animated_sprite.animation = "Loop"
+		animated_sprite.animation = "Idle"
 		
 	move_and_slide()
