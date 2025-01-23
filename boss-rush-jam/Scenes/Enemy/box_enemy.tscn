@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnh6taepjggqt"]
+
+[ext_resource type="Texture2D" uid="uid://ccqwuchy3je1o" path="res://Assets/Enemy/Enemybox.aseprite" id="1_rk0lk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71rs8"]
+size = Vector2(16, 16)
+
+[node name="BoxEnemy" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rk0lk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_71rs8")

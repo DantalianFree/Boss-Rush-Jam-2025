@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjl87qhhxmcjc"
-path="res://.godot/imported/Maharlikav1.png-bb7bf40dd28dd6a0c2d5414b10049b3a.ctex"
+uid="uid://cinuswnumj7um"
+path="res://.godot/imported/Warrior.png-150e2dfbd48ed761603d4d1a525dbbdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Maharlika/Maharlikav1.png"
-dest_files=["res://.godot/imported/Maharlikav1.png-bb7bf40dd28dd6a0c2d5414b10049b3a.ctex"]
+source_file="res://Assets/Maharlika/Warrior.png"
+dest_files=["res://.godot/imported/Warrior.png-150e2dfbd48ed761603d4d1a525dbbdc.ctex"]
 
 [params]
 

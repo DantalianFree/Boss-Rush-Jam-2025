@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjl87qhhxmcjc"
-path="res://.godot/imported/Maharlikav1.png-bb7bf40dd28dd6a0c2d5414b10049b3a.ctex"
+uid="uid://ccqwuchy3je1o"
+path="res://.godot/imported/Enemybox.aseprite-d36f6d3d9557fd7dae8cf0384388ff22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Maharlika/Maharlikav1.png"
-dest_files=["res://.godot/imported/Maharlikav1.png-bb7bf40dd28dd6a0c2d5414b10049b3a.ctex"]
+source_file="res://Assets/Enemy/Enemybox.aseprite"
+dest_files=["res://.godot/imported/Enemybox.aseprite-d36f6d3d9557fd7dae8cf0384388ff22.ctex"]
 
 [params]
 

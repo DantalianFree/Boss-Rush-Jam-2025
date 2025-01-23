@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b08plewly0cey"]
+[gd_scene load_steps=4 format=3 uid="uid://b08plewly0cey"]
 
 [ext_resource type="PackedScene" uid="uid://bth28roxk88l7" path="res://Scenes/Character/player.tscn" id="1_cr5j3"]
 [ext_resource type="PackedScene" uid="uid://b8ko5lk5hsu3h" path="res://Scenes/Tiles/grass.tscn" id="1_qiutn"]
+[ext_resource type="PackedScene" uid="uid://bnh6taepjggqt" path="res://Scenes/Enemy/box_enemy.tscn" id="3_8m5nv"]
 
 [node name="World" type="Node2D"]
 
@@ -10,3 +11,6 @@ layer_0/tile_data = PackedInt32Array(655372, 0, 0, 720908, 0, 1, 655373, 65536, 
 
 [node name="Player" parent="." instance=ExtResource("1_cr5j3")]
 position = Vector2(301, 245)
+
+[node name="BoxEnemy" parent="." instance=ExtResource("3_8m5nv")]
+position = Vector2(345, 253)
