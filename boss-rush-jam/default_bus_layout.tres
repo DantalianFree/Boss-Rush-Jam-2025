@@ -1,0 +1,111 @@
+[gd_resource type="AudioBusLayout" load_steps=17 format=3 uid="uid://cq0vglnexmtww"]
+
+[sub_resource type="AudioEffectFilter" id="AudioEffectFilter_mrgoj"]
+resource_name = "Filter"
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_y61ge"]
+resource_name = "Phaser"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_mjuff"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_aexnd"]
+resource_name = "Distortion"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_rdeai"]
+resource_name = "PitchShift"
+pitch_scale = 0.8
+
+[sub_resource type="AudioEffectFilter" id="AudioEffectFilter_mewdi"]
+resource_name = "Filter"
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_gxt2n"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_1bpqy"]
+resource_name = "Chorus"
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_iokh2"]
+resource_name = "Amplify"
+
+[sub_resource type="AudioEffectPanner" id="AudioEffectPanner_s6r2d"]
+resource_name = "Panner"
+
+[sub_resource type="AudioEffectFilter" id="AudioEffectFilter_4ryc0"]
+resource_name = "Filter"
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_iadpo"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_hk678"]
+resource_name = "PitchShift"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_diog1"]
+resource_name = "Reverb"
+room_size = 0.41
+spread = 0.65
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_q6x1s"]
+resource_name = "Phaser"
+
+[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_ox6v1"]
+resource_name = "Distortion"
+
+[resource]
+bus/0/volume_db = 1.52267
+bus/0/effect/0/effect = SubResource("AudioEffectFilter_mrgoj")
+bus/0/effect/0/enabled = false
+bus/0/effect/1/effect = SubResource("AudioEffectPhaser_y61ge")
+bus/0/effect/1/enabled = false
+bus/0/effect/2/effect = SubResource("AudioEffectReverb_mjuff")
+bus/0/effect/2/enabled = false
+bus/0/effect/3/effect = SubResource("AudioEffectDistortion_aexnd")
+bus/0/effect/3/enabled = false
+bus/0/effect/4/effect = SubResource("AudioEffectPitchShift_rdeai")
+bus/0/effect/4/enabled = false
+bus/0/effect/5/effect = SubResource("AudioEffectFilter_mewdi")
+bus/0/effect/5/enabled = false
+bus/0/effect/6/effect = SubResource("AudioEffectCompressor_gxt2n")
+bus/0/effect/6/enabled = false
+bus/1/name = &"Attack"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 2.11817
+bus/1/send = &"Master"
+bus/2/name = &"MainMenu"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 1.85375
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectChorus_1bpqy")
+bus/2/effect/0/enabled = false
+bus/2/effect/1/effect = SubResource("AudioEffectAmplify_iokh2")
+bus/2/effect/1/enabled = false
+bus/2/effect/2/effect = SubResource("AudioEffectPanner_s6r2d")
+bus/2/effect/2/enabled = false
+bus/2/effect/3/effect = SubResource("AudioEffectFilter_4ryc0")
+bus/2/effect/3/enabled = true
+bus/3/name = &"New Bus 2"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = &"Master"
+bus/4/name = &"RAGE"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = 6.02
+bus/4/send = &"Master"
+bus/4/effect/0/effect = SubResource("AudioEffectCompressor_iadpo")
+bus/4/effect/0/enabled = false
+bus/4/effect/1/effect = SubResource("AudioEffectPitchShift_hk678")
+bus/4/effect/1/enabled = false
+bus/4/effect/2/effect = SubResource("AudioEffectReverb_diog1")
+bus/4/effect/2/enabled = false
+bus/4/effect/3/effect = SubResource("AudioEffectPhaser_q6x1s")
+bus/4/effect/3/enabled = false
+bus/4/effect/4/effect = SubResource("AudioEffectDistortion_ox6v1")
+bus/4/effect/4/enabled = true

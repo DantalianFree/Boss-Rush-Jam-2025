@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce7nriyp73wfb"]
+
+[ext_resource type="FontFile" uid="uid://cn8fr4as2qopo" path="res://Assets/Fonts/ConnectionII.otf" id="1_1ksat"]
+[ext_resource type="Script" path="res://Scripts/Menu/you_died.gd" id="1_kc3ol"]
+
+[node name="YouDied" type="CanvasLayer"]
+script = ExtResource("1_kc3ol")
+
+[node name="FadeRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -103.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.960784, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_1ksat")
+theme_override_font_sizes/font_size = 40
+text = "You Died, The Anitos Will Grant you another try."
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.5
+offset_top = -15.5
+offset_right = 41.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_1ksat")
+theme_override_font_sizes/font_size = 20
+action_mode = 0
+text = "Restart"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

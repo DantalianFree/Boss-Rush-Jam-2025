@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdiu74lfcvnhx"]
+
+[ext_resource type="Script" path="res://Scripts/World/credits_control.gd" id="1_g17a2"]
+[ext_resource type="FontFile" uid="uid://cn8fr4as2qopo" path="res://Assets/Fonts/ConnectionII.otf" id="1_qh6wt"]
+[ext_resource type="FontFile" uid="uid://dvdg1ysf5xnmy" path="res://Assets/Fonts/dpcomic.ttf" id="2_187ou"]
+
+[sub_resource type="Animation" id="Animation_tr0xg"]
+resource_name = "Ending"
+length = 10.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sraj2"]
+_data = {
+"Ending": SubResource("Animation_tr0xg")
+}
+
+[node name="CreditsControl" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g17a2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0.701961)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+clip_contents = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -359.5
+offset_top = -87.0
+offset_right = 359.5
+offset_bottom = 87.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_187ou")
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/normal_font_size = 29
+text = "Thank you for playing my first ever game and game jam!
+
+I was a little late in starting because of a hectic schedule,
+but I want to express my gratitude to Reinnette and BrandX, two of my closest friends,
+for helping me with the sprites and music.
+
+All music and art was created by them, is copyright-free, and was made solely for this game.
+
+I hope you enjoyed the experience!"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+clip_contents = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -499.0
+offset_top = 152.0
+offset_right = 499.0
+offset_bottom = 332.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_qh6wt")
+theme_override_font_sizes/normal_font_size = 20
+text = "Press Space to return to the main menu"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_sraj2")
+}

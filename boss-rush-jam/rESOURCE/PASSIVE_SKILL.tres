@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SkillLoadout" load_steps=5 format=3 uid="uid://cypxye1uvf1oo"]
+
+[ext_resource type="Script" path="res://AnitoSkill.gd" id="1_2t7mh"]
+[ext_resource type="Script" path="res://AnitoProtection.gd" id="2_448ur"]
+[ext_resource type="Script" path="res://SkillLoadout.gd" id="3_4bnne"]
+
+[sub_resource type="Resource" id="Resource_syed7"]
+script = ExtResource("2_448ur")
+defense_bonus = 10
+duration = 10.0
+skill_type = 1
+skill_name = "Unnamed Anito"
+skill_description = ""
+
+[resource]
+script = ExtResource("3_4bnne")
+passive_skills = Array[ExtResource("1_2t7mh")]([SubResource("Resource_syed7")])
+active_skills = Array[ExtResource("1_2t7mh")]([])

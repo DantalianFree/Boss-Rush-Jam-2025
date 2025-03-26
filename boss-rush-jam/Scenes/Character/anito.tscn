@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1488olbppicg"]
+
+[ext_resource type="Texture2D" uid="uid://lqejce3tb7dw" path="res://Assets/Maharlika/Anito.png" id="1_16y04"]
+[ext_resource type="Texture2D" uid="uid://d1u0635qcsjxl" path="res://Assets/Effects/dashparticle.png" id="2_7gpwd"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yrh86"]
+particle_flag_disable_z = true
+spread = 0.0
+orbit_velocity_min = -2.0
+orbit_velocity_max = 2.0
+radial_velocity_min = -35.97
+radial_velocity_max = 179.86
+gravity = Vector3(0, 98, 0)
+scale_min = 0.5
+scale_max = 0.5
+color = Color(0.603922, 0.443137, 0.188235, 0.827451)
+
+[node name="Anito" type="Sprite2D"]
+texture = ExtResource("1_16y04")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+show_behind_parent = true
+scale = Vector2(0.5, 0.5)
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_yrh86")
+texture = ExtResource("2_7gpwd")
+speed_scale = 0.5

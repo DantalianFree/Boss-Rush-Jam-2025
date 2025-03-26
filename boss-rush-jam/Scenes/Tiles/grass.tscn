@@ -1,16 +1,105 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8ko5lk5hsu3h"]
+[gd_scene load_steps=16 format=3 uid="uid://b8ko5lk5hsu3h"]
 
-[ext_resource type="Texture2D" uid="uid://ix6dcsxi72s5" path="res://Assets/Tiles/Grass.png" id="1_io0vw"]
+[ext_resource type="Texture2D" uid="uid://coej76glri1fp" path="res://Assets/Tiles/Boulders.png" id="1_4qwn8"]
+[ext_resource type="Texture2D" uid="uid://c3y03ocrm0d4p" path="res://Assets/Tiles/grass2.png" id="2_hgo6e"]
+[ext_resource type="Texture2D" uid="uid://dyd76yfj6h5la" path="res://Assets/Tiles/MiranoTileSet/Dirt_DL_DR.png" id="2_nbbaq"]
+[ext_resource type="Texture2D" uid="uid://bhxokatruuy6y" path="res://Assets/Tiles/grass1.png" id="3_88cpj"]
+[ext_resource type="Texture2D" uid="uid://d1nvxprartrmj" path="res://Assets/Tiles/MiranoTileSet/spritesheet (1).png" id="3_irel2"]
+[ext_resource type="Texture2D" uid="uid://dl82bokpdpfcf" path="res://Assets/Trees/Tree.png" id="4_5uo8y"]
+[ext_resource type="Texture2D" uid="uid://byeof8cv1u7ml" path="res://Assets/Trees/Treev2.png" id="5_ai7b5"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gv5g2"]
-texture = ExtResource("1_io0vw")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kb0uh"]
+texture = ExtResource("1_4qwn8")
+0:0/size_in_atlas = Vector2i(2, 2)
 0:0/0 = 0
-1:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+0:2/size_in_atlas = Vector2i(2, 2)
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b7lo3"]
+texture = ExtResource("2_nbbaq")
+0:0/0 = 0
 0:1/0 = 0
+1:0/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ylok2"]
+texture = ExtResource("3_irel2")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+4:0/size_in_atlas = Vector2i(2, 2)
+4:0/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+8:0/size_in_atlas = Vector2i(2, 2)
+8:0/0 = 0
+10:0/size_in_atlas = Vector2i(2, 2)
+10:0/0 = 0
+12:0/size_in_atlas = Vector2i(2, 2)
+12:0/0 = 0
+14:0/size_in_atlas = Vector2i(2, 2)
+14:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+17:0/0/y_sort_origin = 1
+18:0/size_in_atlas = Vector2i(2, 2)
+18:0/0 = 0
+20:0/size_in_atlas = Vector2i(2, 2)
+20:0/0 = 0
+22:0/size_in_atlas = Vector2i(2, 2)
+22:0/0 = 0
+24:0/size_in_atlas = Vector2i(2, 2)
+24:0/0 = 0
+26:0/size_in_atlas = Vector2i(2, 2)
+26:0/0 = 0
+28:0/size_in_atlas = Vector2i(2, 2)
+28:0/0 = 0
+30:0/size_in_atlas = Vector2i(2, 2)
+30:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upw8v"]
+texture = ExtResource("4_5uo8y")
+margins = Vector2i(0, 1)
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7a3ml"]
+texture = ExtResource("5_ai7b5")
+margins = Vector2i(2, 9)
+use_texture_padding = false
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m685h"]
+resource_name = "grass"
+texture = ExtResource("3_88cpj")
+0:0/0 = 0
+0:1/0 = 0
+0:3/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4t2y0"]
+texture = ExtResource("2_hgo6e")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+0:2/size_in_atlas = Vector2i(2, 2)
+0:2/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_hted7"]
-sources/0 = SubResource("TileSetAtlasSource_gv5g2")
+sources/6 = SubResource("TileSetAtlasSource_m685h")
+sources/9 = SubResource("TileSetAtlasSource_4t2y0")
+sources/0 = SubResource("TileSetAtlasSource_kb0uh")
+sources/1 = SubResource("TileSetAtlasSource_b7lo3")
+sources/2 = SubResource("TileSetAtlasSource_ylok2")
+sources/3 = SubResource("TileSetAtlasSource_upw8v")
+sources/4 = SubResource("TileSetAtlasSource_7a3ml")
 
 [node name="TileMap" type="TileMap"]
 tile_set = SubResource("TileSet_hted7")

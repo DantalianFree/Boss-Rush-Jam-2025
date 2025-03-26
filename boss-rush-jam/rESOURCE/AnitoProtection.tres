@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AnitoProtection" load_steps=2 format=3 uid="uid://jfc6sfemvu48"]
+
+[ext_resource type="Script" path="res://AnitoProtection.gd" id="1_n57eb"]
+
+[resource]
+script = ExtResource("1_n57eb")
+defense_bonus = 10
+duration = 10.0
+skill_type = 1
+skill_name = "Unnamed Anito"
+skill_description = ""
